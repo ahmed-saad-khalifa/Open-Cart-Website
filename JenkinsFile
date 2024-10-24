@@ -1,0 +1,229 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clean Projects') {
+            steps {
+                bat 'mvn clean'
+            }
+        }
+
+        stage('Compile') {
+            steps {
+                bat 'mvn clean compile'
+            }
+        }
+
+
+
+        stage('Register Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PRegisterPage'
+                    } catch (Exception e) {
+                        echo "RegisterPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Login Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PLoginPage'
+                    } catch (Exception e) {
+                        echo "LoginPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+
+        stage('Home Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PHomePage'
+                    } catch (Exception e) {
+                        echo "Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Header Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PHeader'
+                    } catch (Exception e) {
+                        echo "Header Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Footer Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PFooter'
+                    } catch (Exception e) {
+                        echo "Footer Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Category Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PCategoryPage'
+                    } catch (Exception e) {
+                        echo "CategoryPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Product Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PProductPage'
+                    } catch (Exception e) {
+                        echo "ProductPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Cart Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PShoppingCartPage'
+                    } catch (Exception e) {
+                        echo "ShoppingCartPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Checkout Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PCheckoutPage'
+                    } catch (Exception e) {
+                        echo "Checkout Page Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('My Account Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PMyAccountPage'
+                    } catch (Exception e) {
+                        echo "MyAccountPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Reward Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PRewardPage'
+                    } catch (Exception e) {
+                        echo "Reward Page Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+
+        stage('Brands Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PBrandsPage'
+                    } catch (Exception e) {
+                        echo "BrandsPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Whislist Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PWhislistPage'
+                    } catch (Exception e) {
+                        echo "WhislistPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('New Sletter Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PNewsletterPage'
+                    } catch (Exception e) {
+                        echo "NewsletterPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Transcation Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PTransactionPage'
+                    } catch (Exception e) {
+                        echo "TransactionPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+
+        stage('Return Page Comp Test') {
+            steps {
+                script {
+                    try {
+                        bat 'mvn package -PReturnsPage'
+                    } catch (Exception e) {
+                        echo "ReturnsPage Test failed: ${e.message}"
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Archive the JAR file generated
+            archiveArtifacts artifacts: 'target/*.jar', allowEmptyArchive: true
+
+            // Publish JUnit test results
+            junit 'target/surefire-reports/junitreports/TEST-*.xml'
+
+            // Archive screenshots
+            archiveArtifacts artifacts: 'ScreenShots/*.png', allowEmptyArchive: true
+
+
+
+        }
+    }
+}

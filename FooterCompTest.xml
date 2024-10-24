@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/Footer_Test/FooterCompTest.java">
+        <classes>
+            <class name="Footer_Test.FooterCompTest">
+                <methods>
+<!--                    <include name="checkFooterContainer"/>-->
+<!--                    <include name="checkInformationSectionHyperLinks"/>-->
+<!--                    <include name="checkCustomerServiceSectionHyperLinks"/>-->
+<!--                    <include name="checkExtrasSectionHyperLinks"/>-->
+                    <include name="checkAffiliateHyperLinkWhileLogin"/>
+<!--                    <include name="checkMyAccountSectionHyperLinksWhileNoLogin"/>-->
+                    <include name="checkMyAccountSectionHyperLinksWhileLogin"/>
+<!--                    <include name="checkWhenClickOnOpenCartDirectedToMainWebsite"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

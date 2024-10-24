@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/LoginPage_Test/LoginPageComp_Test.java">
+        <classes>
+            <class name="LoginPage_Test.LoginPageComp_Test">
+                <methods>
+<!--                    <include name="CheckIfLoginPageOpened"/>-->
+<!--                    <include name="CheckIfUserLoggedinWithValidData"/>-->
+                    <include name="CheckIfUserLoggedinWithINValidData"/>
+<!--                    <include name="TestLoginWithFakeData"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

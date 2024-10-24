@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/WishListPage_Test/WishListCompTest.java">
+        <classes>
+            <class name="WishListPage_Test.WishListCompTest">
+                <methods>
+                    <include name="checkContainer"/>
+<!--                    <include name="checkContinueButtonDirectsToMyAccountPage"/>-->
+                    <include name="checkTheClickOnProductImageDirectsToItsPage"/>
+<!--                    <include name="checkTheClickOnProductHyperLinkDirectsToItsPage"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

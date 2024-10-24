@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/TransactionPage_Test/TransactionPageTest.java">
+        <classes>
+            <class name="TransactionPage_Test.TransactionPageTest">
+                <methods>
+                    <include name="testCheckTransactionPageOpened"/>
+<!--                    <include name="testCheckTransactionListDisplayed"/>-->
+<!--                    <include name="testCheckTransactionDetailsDisplayed"/>-->
+                    <include name="testCheckContinueButton"/>
+<!--                    <include name="testCheckNoTransactionMessage"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

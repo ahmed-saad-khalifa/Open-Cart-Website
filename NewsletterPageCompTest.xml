@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/NewsletterPage_Test/NewsletterPageCompTest.java">
+        <classes>
+            <class name="NewsletterPage_Test.NewsletterPageCompTest">
+                <methods>
+                    <include name="TestNewsletterPageOpened"/>
+<!--                    <include name="TestNewsletterSubscriptionTitleIsDisplayed"/>-->
+<!--                    <include name="TestSubscriptionYesNoBtns"/>-->
+<!--                    <include name="TestBackBtnIsClickable"/>-->
+                    <include name="TestContinueBtnIsClickable"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

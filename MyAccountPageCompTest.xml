@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/MyAccountPage_Test/MyAccountPageCompTest.java">
+        <classes>
+            <class name="MyAccountPage_Test.MyAccountPageCompTest">
+                <methods>
+<!--                    <include name="CheckIfMyAccountPageOpened"/>-->
+                    <include name="ClickEditYourAccountInformationBtn"/>
+<!--                    <include name="ClickChangeYourPasswordBtn"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

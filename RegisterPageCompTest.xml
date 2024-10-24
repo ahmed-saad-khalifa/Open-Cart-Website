@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/RegisterPage_Test/RegisterPageCompTest.java">
+        <classes>
+            <class name="RegisterPage_Test.RegisterPageCompTest">
+                <methods>
+<!--                    <include name="CheckIfRegisterPageOpened"/>-->
+                    <include name="CheckUserRegisteredWithValidData"/>
+<!--                    <include name="CheckUserRegisteredWithSameEmailBefore"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

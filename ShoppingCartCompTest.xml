@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/ShoppingCartPage_Test/ShoppingCartCompTest.java">
+        <classes>
+            <class name="ShoppingCartPage_Test.ShoppingCartCompTest">
+                <methods>
+                    <include name="checkContainer"/>
+                    <include name="checkRemoveBtn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

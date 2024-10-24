@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/ReturnsPage_Test/ReturnsPageCompTest.java">
+        <classes>
+            <class name="ReturnsPage_Test.ReturnsPageCompTest">
+                <methods>
+                    <include name="TestReturnsPageOpened"/>
+<!--                    <include name="TestClickBackBtn"/>-->
+<!--                    <include name="TestUserEnteredValidData"/>-->
+                    <include name="TestIfUserEntersInvalidData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

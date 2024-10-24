@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/CategoryPage_Test/CategoryPageTest.java">
+        <classes>
+            <class name="CategoryPage_Test.CategoryPageTest">
+                <methods>
+                    <include name="testCheckCategoryPageOpened"/>
+<!--                    <include name="testCheckProductListDisplayed"/>-->
+<!--                    <include name="testClickAddToCartButton"/>-->
+                    <include name="testCheckAddToCartAlertDisplay"/>
+<!--                    <include name="testClickAddToWishListButton"/>-->
+                    <include name="testCheckAddToWishListAlertDisplay"/>
+                    <include name="testClickCompareProductButton"/>
+<!--                    <include name="testCheckCompareProductAlertDisplay"/>-->
+<!--                    <include name="testCheckPaginationDisplayed"/>-->
+<!--                    <include name="testCheckCategoryTitle"/>-->
+<!--                    <include name="testClickProductThumbnail"/>-->
+<!--                    <include name="testCheckProductPriceDisplayed"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/Header_Test/Header_Comp_Test.java">
+        <classes>
+            <class name="Header_Test.Header_Comp_Test">
+                <methods>
+                    <include name="CheckIfHomePageOpened"/>
+                    <include name="CheckIfCurrencySwitcherWorks"/>
+                    <include name="CheckIfContactUsPageWorks"/>
+                    <include name="CheckIfWishlistButtonWorks"/>
+<!--                    <include name="CheckIfShoppingCartButtonWorks"/>-->
+<!--                    <include name="CheckIfCheckoutButtonWorks"/>-->
+<!--                    <include name="CheckIfLoginButtonWorks"/>-->
+<!--                    <include name="CheckIfRegisterButtonWorks"/>-->
+<!--                    <include name="CheckIfCartDropdownWorks"/>-->
+                    <include name="CheckValidSearch"/>
+<!--                    <include name="CheckInvalidSearch"/>-->
+<!--                    <include name="CheckCategorySwitchers"/>-->
+<!--                    <include name="CheckCategoryButtons"/>-->
+<!--                    <include name="CheckDesktopsSwitcher"/>-->
+<!--                    <include name="CheckHeaderContainers"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

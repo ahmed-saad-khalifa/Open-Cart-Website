@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/BrandsPage_Test/BrandsPageCompTest.java">
+        <classes>
+            <class name="BrandsPage_Test.BrandsPageCompTest">
+                <methods>
+                    <include name="TestIfBrandsPageOpened"/>
+<!--                    <include name="TestPageTitleIsDisplayed"/>-->
+<!--                    <include name="TestBrandsIndexIsDisplayed"/>-->
+                    <include name="TestBrandAreClickable"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

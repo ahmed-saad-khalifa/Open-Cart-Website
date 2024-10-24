@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ENG HOSAM/IdeaProjects/OpenCartProject/src/test/java/CheckoutPage_Test/CheckoutPageTest.java">
+        <classes>
+            <class name="CheckoutPage_Test.CheckoutPageTest">
+                <methods>
+<!--                    <include name="checkCheckoutPageOpened"/>-->
+<!--                    <include name="checkStepOne"/>-->
+<!--                    <include name="checkStepTwo"/>-->
+<!--                    <include name="checkStepThree"/>-->
+<!--                    <include name="checkStepFour"/>-->
+<!--                    <include name="checkStepFive"/>-->
+                    <include name="checkStepSix"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

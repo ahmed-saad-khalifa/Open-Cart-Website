@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Testing/OpenCart Project/Opencart/src/test/java/HomePage_Test/HomePageCompTest.java">
+        <classes>
+            <class name="HomePage_Test.HomePageCompTest">
+                <methods>
+                    <include name="CheckIfHomePageOpened"/>
+<!--                    <include name="CheckProductImageDisplayed"/>-->
+<!--                    <include name="CheckProductinfoDisplayed"/>-->
+<!--                    <include name="CheckProductNameColorDisplayed"/>-->
+<!--                    <include name="ClickAddToCartBtn"/>-->
+                    <include name="CheckAddToCartAlertDisplay"/>
+<!--                    <include name="CheckAddToCartIconNumberIncrease"/>-->
+<!--                    <include name="ClickAddToWishListBtn"/>-->
+<!--                    <include name="CheckAddToWishListAlertDisplay"/>-->
+                    <include name="CheckAddToWishListIconNumberIncrease"/>
+<!--                    <include name="ClickCompareThisProductBtn"/>-->
+<!--                    <include name="CheckCompareThisProductBtnAlertDisplay"/>-->
+                </methods></class></classes></test></suite>
