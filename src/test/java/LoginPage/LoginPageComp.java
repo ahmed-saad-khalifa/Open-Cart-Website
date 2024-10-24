@@ -14,7 +14,7 @@ public class LoginPageComp extends LoginPageWebElements {
         MyAccountDropDownList.click();
         WebElement LoginIcon = GetLoginIcon();
         LoginIcon.click();
-
+//new
         //check URL
         String url=driver.getCurrentUrl();
         checkIfEqual(url, "https://tutorialsninja.com/demo/index.php?route=account/login");
